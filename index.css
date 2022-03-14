@@ -1,0 +1,358 @@
+@font-face {
+  font-family: didot;
+  src: url(./fonts/Didot-HTF-M42-Medium.ttf);
+}
+
+@font-face {
+  font-family: DIN;
+  src: url(./fonts/DIN\ Medium.ttf);
+}
+
+@font-face {
+  font-family: greatvibes;
+  src: url(./fonts/GreatVibes-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+#main {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: brown;
+}
+
+#nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3vw 4vw;
+  width: 100%;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.13);
+  z-index: 99;
+  background-color: white;
+}
+
+#nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9vw;
+  margin-right: 1.8vw;
+  font-family: DIN;
+  letter-spacing: 0.05vw;
+}
+
+#nav #rgt {
+  display: flex;
+  align-items: center;
+}
+
+#nav #rgt i {
+  font-size: 1.6vw;
+}
+
+#nav #brand {
+  font-family: greatvibes;
+  font-size: 1vw;
+  letter-spacing: 0.05vw;
+  font-weight: 100;
+}
+
+#menupannel {
+  position: fixed;
+  z-index: 100;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1606744824163-985d376605aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+#menupannel #overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+#menupannel #overlay i {
+  position: absolute;
+  top: 3vw;
+  right: 4vw;
+  color: white;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+#overlay #brand {
+  position: absolute;
+  top: 4vw;
+  left: 15vw;
+  font-family: greatvibes;
+  font-size: 2.1vw;
+  letter-spacing: 0.05vw;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.815);
+}
+
+#overlay #linkcont {
+  position: absolute;
+  bottom: 10vw;
+  left: 15vw;
+  display: flex;
+  align-items: center;
+}
+
+#overlay #linkcont #lftlinks a {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.904);
+  font-family: didot;
+  font-size: 2vw;
+  margin-top: 0.5vw;
+}
+
+#overlay #linkcont #rgtlinks {
+  margin-left: 25vw;
+}
+
+#linkcont #rgtlinks #top p {
+  color: rgba(255, 255, 255, 0.883);
+  font-family: didot;
+  font-size: 1.4vw;
+}
+
+#rgtlinks #top .secs {
+  margin-right: 2vw;
+}
+
+#rgtlinks #top #links {
+  display: flex;
+  margin-top: 1.5vw;
+}
+
+#rgtlinks #top #links a {
+  display: block;
+  letter-spacing: 0.05vw;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.472);
+  font-family: DIN;
+  font-size: 0.7vw;
+  letter-spacing: 0.13vw;
+  margin-top: 0.4vw;
+}
+
+#rgtlinks #top .extra {
+  margin-top: 6vw;
+}
+
+#rgtlinks #top .extra p {
+  margin-bottom: 1.5vw;
+  color: rgba(255, 255, 255, 0.411);
+}
+
+#rgtlinks #btm button {
+  color: rgba(255, 255, 255, 0.541);
+  font-family: DIN;
+  letter-spacing: 0.05vw;
+  font-size: 0.8vw;
+  border-bottom-color: rgba(255, 255, 255, 0.541);
+  margin-right: 2vw;
+}
+
+#main #heading {
+  position: relative;
+  height: 30vw;
+  background-color: white;
+  z-index: 8;
+  box-shadow: 0 55px 20px black;
+}
+
+#heading #txt {
+  position: fixed;
+  top: 10vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#heading #txt h1 {
+  font-size: 5vw;
+  font-family: didot;
+  font-weight: 200;
+  line-height: 5vw;
+}
+
+#heading #txt #p {
+  margin-top: 1.3vw;
+}
+
+#heading #txt p {
+  font-size: 0.8vw;
+  text-transform: uppercase;
+  font-family: DIN;
+  letter-spacing: 0.07vw;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.788);
+}
+
+button {
+  height: 2vw;
+  border: none;
+  background-color: transparent;
+  padding: 0 0.5vw;
+  font-family: DIN;
+  border-bottom: 0.07vw solid black;
+  font-size: 1vw;
+  margin-top: 2vw;
+}
+
+#main #mainimg {
+  height: 90vh;
+  background-image: url(./assets/img1.jpg);
+  background-size: cover;
+  background-attachment: fixed !important;
+  position: relative;
+  z-index: 10;
+}
+
+#main #gallery {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 8;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 -55px 20px black;
+}
+
+#gallery #txt2 {
+  position: fixed;
+  display: flex;
+  width: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 14vw;
+  display: none;
+}
+
+#txt2 h1 {
+  font-size: 4vw;
+  font-family: didot;
+  font-weight: 200;
+  line-height: 4vw;
+}
+
+#txt2 p {
+  text-align: center;
+  width: 60%;
+  font-size: 1.1vw;
+  margin-top: 2vw;
+  color: rgba(0, 0, 0, 0.788);
+}
+
+#gallery .frems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  min-height: 100vh;
+  padding: 15vw 5vw 5vw 5vw;
+}
+
+.frems .frmcont {
+  margin-top: 5vw;
+}
+
+.frems .portrate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 27vw;
+  width: 75%;
+  border: 0.2vw solid rgba(0, 0, 0, 0.438);
+}
+
+.frems .portrate .img {
+  position: relative;
+  overflow: hidden;
+  height: 23vw;
+  width: 80%;
+  background-color: black;
+}
+
+.frems .landscape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16vw;
+  width: 100%;
+  border: 0.2vw solid rgba(0, 0, 0, 0.438);
+}
+
+.frems .landscape .img {
+  position: relative;
+  overflow: hidden;
+  height: 13vw;
+  width: 85%;
+  background-color: black;
+}
+
+.landscape .img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+
+.portrate .img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+
+.portrate .img img:hover {
+  height: 106%;
+}
+
+.landscape .img img:hover {
+  width: 106%;
+}
